@@ -1,0 +1,58 @@
+{
+  "-NdYD6z5-JEKfAXwDHYS": {
+    "firebaseKey": "-NdYD6z5-JEKfAXwDHYS",
+    "title": "Element",
+    "description": "HTML elements are the individual components or parts that make up a web page. They can be text, images, links, headings, paragraphs, buttons, forms, and more. Each element is defined by an HTML tag, which acts as a container for the content it represents.",
+    "timestamp": "6:17 AM",
+    "language": "HTML",
+    "uid": "slYMdTgsdeP3SA9QXorj9r2MDlv2"
+  },
+  "-NdYD6z6wlbe80i2C50v": {
+    "firebaseKey": "-NdYD6z6wlbe80i2C50v",
+    "title": "Headings",
+    "description": "Headings are used to give structure and hierarchy to your text-based content. They help users quickly grasp the main points of a page and navigate through its sections. HTML provides six levels of headings.",
+    "timestamp": "6:54 AM",
+    "language": "HTML",
+    "uid": "slYMdTgsdeP3SA9QXorj9r2MDlv2"
+  },
+  "-NdYD6z7dUPnivtlKUr1": {
+    "firebaseKey": "-NdYD6z7dUPnivtlKUr1",
+    "title": "Variable",
+    "description": "A named reference to a value is a variable. You can think of variables as simply “storage containers” for data in your code. We can use variables to store goodies, visitors, and other data.",
+    "timestamp": "8:03 AM",
+    "language": "Javascript",
+    "uid": "slYMdTgsdeP3SA9QXorj9r2MDlv2"
+  },
+  "-NdYD6z8AdHJUuBuuVyh": {
+    "firebaseKey": "-NdYD6z8AdHJUuBuuVyh",
+    "title": "Selector",
+    "description": "The way you declare which elements the styles should apply to. There are different kinds of selectors such as: class, ID, attribute selector, psuedo-classes, and pseudo-elements.",
+    "timestamp": "11:35 AM",
+    "language": "CSS",
+    "uid": "slYMdTgsdeP3SA9QXorj9r2MDlv2"
+  },
+  "-NdYD6z8AdHJUuBuuVyi": {
+    "firebaseKey": "-NdYD6z8AdHJUuBuuVyi",
+    "title": "Attribute",
+    "description": "Attributes provide additional information about HTML elements, allowing you to control their behavior, appearance, or functionality. They are added within the opening tag of an HTML element and consist of a name-value pair, separated by an equals sign (=).",
+    "timestamp": "6:37 PM",
+    "language": "HTML",
+    "uid": "slYMdTgsdeP3SA9QXorj9r2MDlv2"
+  },
+  "-NdYD6z9D5Rm1pE3NdJv": {
+    "firebaseKey": "-NdYD6z9D5Rm1pE3NdJv",
+    "title": "Value",
+    "description": "CSS values are set against CSS Properties and reside within CSS declaration block, which is a part of the CSS rule / statement.",
+    "timestamp": "9:50 PM",
+    "language": "CSS",
+    "uid": "slYMdTgsdeP3SA9QXorj9r2MDlv2"
+  },
+  "-NdYD6zAD1DdHmDv2Rck": {
+    "firebaseKey": "-NdYD6zAD1DdHmDv2Rck",
+    "title": "Functions",
+    "description": "A JavaScript function is a block of code designed to perform a particular task. A function is executed when something invokes(calls) it",
+    "timestamp": "10:24 PM",
+    "language": "Javascript",
+    "uid": "slYMdTgsdeP3SA9QXorj9r2MDlv2"
+  }
+}

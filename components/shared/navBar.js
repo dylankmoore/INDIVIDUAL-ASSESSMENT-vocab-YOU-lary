@@ -2,7 +2,7 @@ import renderToDOM from '../../utils/renderToDom';
 
 const navBar = () => {
   const domString = `
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-5">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-lavender bg-lavender mb-5">
     <div class="container-fluid">
         <a class="navbar-brand title" href="#">Vocab-YOU-Lary</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +29,8 @@ const navBar = () => {
           <li>
             <input
               class="form-control mr-sm-2"
-              id="search"
-              placeholder="Search Vocabulary"
+              id="search-vocab"
+              placeholder="Search Vocabulary Terms"
               aria-label="Search"
             />
             </li>

@@ -9,7 +9,8 @@ const vocabCards = (uid) => new Promise((resolve, reject) => {
     headers: {
       'Content-Type': 'application/json',
     },
-  }).then((response) => response.json())
+  })
+    .then((response) => response.json())
     .then((data) => {
       if (data) {
         resolve(Object.values(data));
@@ -27,7 +28,8 @@ const singleVocabCard = (firebaseKey) => new Promise((resolve, reject) => {
     headers: {
       'Content-Type': 'application/json',
     },
-  }).then((response) => response.json())
+  })
+    .then((response) => response.json())
     .then((data) => resolve(data))
     .catch(reject);
 });
@@ -56,7 +58,7 @@ const updateVocabCard = (payload) => new Promise((resolve, reject) => {
     body: JSON.stringify(payload),
   })
     .then((response) => response.json())
-    .then(resolve)
+    .then((data) => resolve(data))
     .catch(reject);
 });
 
@@ -78,7 +80,7 @@ const deleteVocabCard = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// HTML CARDS
+// FILTER HTML CARDS
 const htmlCards = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab_data.json?orderBy="uid"&equalTo"${uid}"`, {
     method: 'GET',
@@ -94,14 +96,15 @@ const htmlCards = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// CSS CARDS
+// FILTER CSS CARDS
 const cssCards = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab_data.json?orderBy="uid"&equalTo"${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
-  }).then((response) => response.json())
+  })
+    .then((response) => response.json())
     .then((data) => {
       const css = Object.values(data).filter((item) => item.language === 'CSS');
       resolve(css);
@@ -109,19 +112,30 @@ const cssCards = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// JS CARDS
+// FILTER JS CARDS
 const jsCards = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab_data.json?orderBy="uid"&equalTo"${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
-  }).then((response) => response.json())
+  })
+    .then((response) => response.json())
     .then((data) => {
       const javascript = Object.values(data).filter((item) => item.language === 'Javascript');
       resolve(javascript);
     })
     .catch(reject);
+});
+
+// SEARCH VOCAB
+const searchVocabCards = (searchValue, uid) => new Promise((resolve, reject) => {
+  vocabCards(uid).then((vocabArray) => {
+    const searchResults = vocabArray.filter((item) => (
+      item.title.toLowerCase().includes(searchValue) || item.description.toLowerCase().includes(searchValue)
+    ));
+    resolve(searchResults);
+  }).catch(reject);
 });
 
 export {
@@ -132,5 +146,6 @@ export {
   deleteVocabCard,
   htmlCards,
   cssCards,
-  jsCards
+  jsCards,
+  searchVocabCards,
 };

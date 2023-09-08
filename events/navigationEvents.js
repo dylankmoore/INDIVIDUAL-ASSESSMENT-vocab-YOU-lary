@@ -1,9 +1,9 @@
 import { signOut } from '../utils/auth';
 import { emptyVocabCards, showVocabCards } from '../pages/vocab';
 import {
-  vocabCards, htmlCards, cssCards, jsCards
+  vocabCards, htmlCards, cssCards, jsCards, searchVocabCards
 } from '../api/vocabData';
-// import addVocabForm from '../components/forms/addVocabForm';
+import addVocabForm from '../components/forms/addVocabForm';
 
 const navigationEvents = (user) => {
   // LOGOUT BUTTON
@@ -22,10 +22,10 @@ const navigationEvents = (user) => {
   });
 
   // CREATE CARDS
-  /* document.querySelector('#create-vocab').addEventListener('click', () => {
-    console.warn('CLICKED UPDATE VOCAB');
+  document.querySelector('#create-vocab').addEventListener('click', () => {
+    console.warn('CLICKED CREATE VOCAB');
     addVocabForm({}, user);
-  }); */
+  });
 
   // HTML CARDS
   document.querySelector('#html').addEventListener('click', () => {
@@ -40,6 +40,23 @@ const navigationEvents = (user) => {
   // JS CARDS
   document.querySelector('#javascript').addEventListener('click', () => {
     jsCards(user.uid).then(showVocabCards);
+  });
+
+  // SEARCH VOCAB CARDS
+  document.querySelector('#search-vocab').addEventListener('keyup', (e) => {
+    const searchValue = document.querySelector('#search-vocab').value.toLowerCase();
+    console.warn(searchValue);
+    if (e.keyCode === 13) {
+      searchVocabCards(searchValue, user.uid)
+        .then((search) => {
+          if (search.length) {
+            showVocabCards(search);
+          } else {
+            emptyVocabCards();
+          }
+        });
+      document.querySelector('#search-vocab').value = '';
+    }
   });
 };
 

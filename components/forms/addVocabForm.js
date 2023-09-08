@@ -8,15 +8,13 @@ const addVocabForm = (uid, obj = {}) => {
   <form id="${obj.firebaseKey ? `update-vocab--${obj.firebaseKey}` : 'submit-vocab'}" class="mb-4">
   
   <div class="form-group">
-    <label for="title">New Vocabulary Word:</label>
-    <input type="text" class="form-control" id="title" aria-describedby="vocabTitle" placeholder="Enter Vocabulary Word" value="${obj.title || ''}" required>
-  </div>
-  
+    <label for="title">Vocabulary Word:</label>
+    <input type="text" class="form-control" id="title" aria-describedby="vocabTitle" placeholder="Enter A Vocab Word" value="${obj.title || ''}" required>
+  </div> <BR>
   <div class="form-group">
-    <label for="description">Description:</label>
+    <label for="description">Definition:</label>
     <textarea class="form-control" placeholder="Enter Definition" id="description" style="height: 100px">${obj.description || ''}</textarea>
   </div><BR>
-  
   <div class="form-group">
   <label for="language">Programming Language:</label>
   <select id="language" value="${obj.language || ''}" required>
@@ -25,7 +23,7 @@ const addVocabForm = (uid, obj = {}) => {
     <option value="JavaScript">JavaScript</option>
   </select>
 </div><BR>
-  <button type="submit" class="btn btn-primary" id="submit-btn">Submit Vocabulary Word
+  <button type="submit" class="btn btn-primary" id="submit-btn">Submit Vocab Word
   </button>
 </form>
   `;

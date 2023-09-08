@@ -3,7 +3,7 @@
 
 
 body {
-  background-color: antiquewhite;
+  background-color: lavenderblush;
   color: brown;
   text-align: center;
   margin-top: 100px;
@@ -18,11 +18,17 @@ body {
   font-size: 2px;
 }  
 
-.navbar-light .navbar-brand {
+.container-fluid {
+  background-color: lavender;
+}
+
+.navbar-lavender .navbar-brand {
   font-family: "arial", cursive !important;
   color: lightpink;
   font-weight: 900;
   font-size: 2em;
+  background-color: lavender;
+  padding-top: 0%;
 }
 
 .cart-items {
@@ -65,14 +71,14 @@ body {
     width: 40%;
     margin: auto;
     justify-content: center;
-    color: white;
+    color: black;
 
     #formModal {
       color: black;
     }
   }
 
-  #store {
+  #cards {
     width: 90%;
     display: flex;
     flex-flow: row wrap;
@@ -83,17 +89,27 @@ body {
     .card {
       width: 300px;
       margin: 5px;
-
-      .sale-badge {
-        font-size: 1em;
-        background-color: blue;
       }
+
+    }
+    .header {
+      display: flex;
+    }
+    .card-header {
+      justify-content: center;
+      background-color: lavender;
     }
 
-    .table {
-      margin: 10px;
-      width: 80%;
-      margin: 0 auto;
-    }
   }
-}
+  #view {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .google-auth {
+    background-color: lightpink;
+  }

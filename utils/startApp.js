@@ -1,19 +1,19 @@
+import { vocabCards } from '../api/vocabData';
 import logoutButton from '../components/buttons/logoutButton';
 import domBuilder from '../components/shared/domBuilder';
 import navBar from '../components/shared/navBar';
-import { vocabCards } from '../api/vocabData';
-import { emptyVocabCards, showVocabCards } from '../pages/vocab';
 import domEvents from '../events/domEvents';
 import formEvents from '../events/formEvents';
 import navigationEvents from '../events/navigationEvents';
+import { emptyVocabCards, showVocabCards } from '../pages/vocab';
 
 const startApp = (user) => {
   domBuilder(user);
+  navBar();
   domEvents(user);
   formEvents(user);
-  navBar();
-  logoutButton();
   navigationEvents(user);
+  logoutButton();
 
   vocabCards(user.uid).then((array) => {
     if (array.length) {
@@ -22,7 +22,6 @@ const startApp = (user) => {
       emptyVocabCards();
     }
   });
-  // vocabCards(user.uid).then((vocab) => showVocabCards(vocab));
 };
 
 export default startApp;

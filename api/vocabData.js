@@ -131,8 +131,8 @@ const jsCards = (uid) => new Promise((resolve, reject) => {
 // SEARCH VOCAB
 const searchVocabCards = (searchValue, uid) => new Promise((resolve, reject) => {
   vocabCards(uid).then((vocabArray) => {
-    const searchResults = vocabArray.filter((vocab) => (
-      vocab.title.toLowerCase().includes(searchValue) || vocab.description.toLowerCase().include(searchValue)
+    const searchResults = vocabArray.filter((item) => (
+      item.title.toLowerCase().includes(searchValue) || item.description.toLowerCase().includes(searchValue)
     ));
     resolve(searchResults);
   }).catch(reject);

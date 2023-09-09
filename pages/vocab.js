@@ -21,8 +21,8 @@ const showVocabCards = (array) => {
     </div>
     <div class="card-body" style="width: 18rem;">
       <blockquote class="blockquote mb-0">
+      <div class="text-secondary">• ${item.language}</div>
         <p>${item.description}</p>
-        <footer class="blockquote-footer">${item.language}</footer>
       </blockquote><BR>
       <a class="btn btn-view" 
       id="view-vocab-btn--${item.firebaseKey}">View</a>

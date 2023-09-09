@@ -27,15 +27,15 @@ const domEvents = (user) => {
       const [, firebaseKey] = e.target.id.split('--');
       singleVocabCard(firebaseKey).then((vocabObj) => addVocabForm(user.uid, vocabObj));
     }
-    // VIEW CARDS BASED ON LANGUAGE
+    // EVENT TO VIEW HTML CARDS
     if (e.target.id === 'html') {
       htmlCards(user.uid).then(showVocabCards);
     }
-
+    // EVENT TO VIEW CSS CARDS
     if (e.target.id === 'css') {
       cssCards(user.uid).then(showVocabCards);
     }
-
+    // EVENT TO VIEW JS CARDS
     if (e.target.id === 'javascript') {
       jsCards(user.uid).then(showVocabCards);
     }

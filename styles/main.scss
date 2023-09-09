@@ -96,6 +96,7 @@ body {
       }
 
     }
+
     .header {
       display: flex;
     }
@@ -129,27 +130,34 @@ body {
     color: black;
     font-family: 'Courier New', Courier, monospace;
   }
+
 .form-group{
   background-color: lavender;
 }
+
 .btn-view{
   background-color: plum;
   font-family: 'Courier New', Courier, monospace;
 }
+
 .btn-view:hover{
   background-color: lavender;
 }
+
 .btn-edit{
   background-color: lightcoral;
   font-family: 'Courier New', Courier, monospace;
 }
+
 .btn-edit:hover{
   background-color: lavender;
 }
+
 .btn-delete{
   background-color: mediumvioletred;
   font-family: 'Courier New', Courier, monospace;
 }
+
 .btn-delete:hover{
   background-color: lavender;
 }

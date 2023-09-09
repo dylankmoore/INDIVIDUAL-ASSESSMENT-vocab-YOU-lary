@@ -17,8 +17,8 @@ Vocab-YOU-Lary Study Sesh! is an app in which users can create, read, update, an
 ## Relevant Links
 - [Check out the deployed site](#https://dkm-vocab.netlify.app/)
 - [Wireframes] (#https://www.figma.com/file/sfdkkIxe1q5Jo3v8lgrZo3/Untitled?type=design&node-id=0-1&mode=design)
-[Figma flowchart] (#https://www.figma.com/file/UtSDgJYP1PROPmuc7ENbe9/vocab-flowchart?type=whiteboard&node-id=0-1&t=lEI3n2uOGiBAiEwT-0)
-[ERD] (#https://dbdiagram.io/d/64dd530402bd1c4a5ee6a984)
+- [Figma flowchart] (#https://www.figma.com/file/UtSDgJYP1PROPmuc7ENbe9/vocab-flowchart?type=whiteboard&node-id=0-1&t=lEI3n2uOGiBAiEwT-0)
+- [ERD] (#https://dbdiagram.io/d/64dd530402bd1c4a5ee6a984)
 - [Project Board](#https://github.com/users/dylankmoore/projects/2)
 
 ## Code Snippet

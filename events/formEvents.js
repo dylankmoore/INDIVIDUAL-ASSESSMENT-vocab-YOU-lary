@@ -7,7 +7,6 @@ const formEvents = (user) => {
     // CLICK EVENT FOR ADDING A VOCAB
     e.preventDefault();
     if (e.target.id.includes('submit-vocab')) {
-      console.warn('clicked SUBMIT VOCAB', e.target.id);
       const payload = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
@@ -27,7 +26,6 @@ const formEvents = (user) => {
     // EDIT CARDS
     if (e.target.id.includes('update-vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
-      console.warn('clicked UPDATE BOOK', e.target.id);
 
       const payload = {
         title: document.querySelector('#title').value,

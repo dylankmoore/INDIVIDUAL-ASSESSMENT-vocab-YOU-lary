@@ -14,6 +14,7 @@ Vocab-YOU-Lary Study Sesh! is an app in which users can create, read, update, an
 - User can logout of the app.
 
 ## Video Walkthrough of Vocab-YOU-Lary Study Sesh!
+- [Loom video] (#https://www.loom.com/share/3e26f0368aea4ceab0f1e4eb7112e211?sid=7f9a2a9d-13d1-415d-99d3-89bef4f0df19)
 
 ## Relevant Links
 - [Check out the deployed site] (#https://dkm-vocab.netlify.app)

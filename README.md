@@ -1,57 +1,30 @@
-# Q2 - Individual Assessment: Vocab-YOU-lary
+# Vocab-YOU-Lary Study Sesh!  [![Netlify Status](https://api.netlify.com/api/v1/badges/0064a1a2-0b18-4501-8dd1-8c866cc7d209/deploy-status)](https://app.netlify.com/sites/dkm-vocab/deploys)
 
-[VIEW PROJECT INSTRUCTIONS](./PROJECT_INSTRUCTIONS.MD)
+Vocab-YOU-Lary Study Sesh! is an app in which users can create, read, update, and delete programming vocab terms for studying purposes.
 
-## Topics
-- [Get Started](#get-started)
-- [Starting the Project](#starting-the-project)
-- [Other important tidbits](#other-important-tidbits)
-    - [Console messages](#console-messages)
-    - [Including images with webpack](#including-images-with-webpack)
-    - [Importing CSS](#importing-cssscss)
-    - [Deploying on Netlify](#deploying-on-netlify)
-___
+## About the User
+- This particular app is ideal for a user that wants to study important vocabulary terms used in front end web development & have them located in one place.
 
-## Get Started
+## Features
+- A user can access the app by first logging in to the app via their google login information.
+- User can then create, read, update, and delete different vocabulary cards.
+- User can filter the cards based on their programming language.
+- User can also search through the cards with any specific word on a particular card.
+- User can logout of the app.
 
-1. Clone your new repo to your local machine
+## Video Walkthrough of Vocab-YOU-Lary Study Sesh!
 
-## Starting the Project
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name.
-1. Rename the `.sample.env` file to `.env` file. The final file name should be `.env`
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
-1. To start your application, run `npm start`
+## Relevant Links
+- [Check out the deployed site](#https://dkm-vocab.netlify.app/)
+- [Wireframes] (#https://www.figma.com/file/sfdkkIxe1q5Jo3v8lgrZo3/Untitled?type=design&node-id=0-1&mode=design)
+[Figma flowchart] (#https://www.figma.com/file/UtSDgJYP1PROPmuc7ENbe9/vocab-flowchart?type=whiteboard&node-id=0-1&t=lEI3n2uOGiBAiEwT-0)
+[ERD] (#https://dbdiagram.io/d/64dd530402bd1c4a5ee6a984)
+- [Project Board](#https://github.com/users/dylankmoore/projects/2)
 
-### If you see this, you are set to go!
-![lit-screen](https://user-images.githubusercontent.com/29741570/190486162-27e9032d-266f-4962-a85c-fc40c58f33db.png)
+## Code Snippet
+PLACE CODE SNIPPET HERE
 
-**NOTES:** 
-- Changes you make to the project will make the browser reload on save...no more hard refresh unless something goes wrong.
-- You will no longer be using the `hs -o` command. To start your server, you will run `npm start`
+## Project Screenshots
 
-## Other Important Tidbits
-### Console messages
-From this time forward, you will be expected to have a clean console in order for your assignments to be approved. This means that the use of `console.log` is acceptable **_(debugger is WAY better though)_** while developing, but will throw an error in your console like the image below, but all `logs` will have to be removed. You may use `console.error` and `console.warn` in your code however for messages. These need to all be removed before pushing to production unless they contain vital info for the user/developer.
-
-![notacceptable](https://user-images.githubusercontent.com/29741570/190486163-3dd8640f-5dda-4f73-9436-6020fc9e00c4.png)
-
-### Including Images with Webpack
-If you have a folder of local images that you want to load into your code things get a little strange with webpack.  Remember the only way webpack knows about assets is if they are imported into your javascript files.  Even our CSS is not added until those files are imported into our javascript files.  Below is some sample code for how to load a local image file into your project
-
-```js
-import cat from './assets/cat.jpg';
-
-let domString = `<img src=${cat} alt="picture of a cat"/>`;
-
-document.getElementById('cat').innerHTMl = domString;
-```
-
-### Importing CSS/SCSS
-**NOTE:** We will be using SCSS files. They are used the same way your CSS files work, with some added benefits that we will discuss later.
-
-Since Webpack is making the connection to the JS and CSS for us and we are no longer manually adding links or script tags to our HTML, we have to get our styles to the application some way...
-
-Here is how we add our styles using webpack:
-
-```js
-import '../styles/main.scss';
+## Contributors
+- [Dylan Moore](https://github.com/dylankmoore)

@@ -24,7 +24,6 @@ const navigationEvents = (user) => {
 
   // CREATE CARDS
   document.querySelector('#create-vocab').addEventListener('click', () => {
-    console.warn('CLICKED CREATE VOCAB');
     addVocabForm({}, user);
   });
 
@@ -46,7 +45,6 @@ const navigationEvents = (user) => {
   // SEARCH VOCAB CARDS
   document.querySelector('#search-vocab').addEventListener('keyup', (e) => {
     const searchValue = document.querySelector('#search-vocab').value.toLowerCase();
-    console.warn(searchValue);
     if (e.keyCode === 13) {
       searchVocabCards(searchValue, user.uid)
         .then((search) => {

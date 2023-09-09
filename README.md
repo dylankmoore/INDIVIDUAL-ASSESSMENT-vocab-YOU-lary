@@ -10,12 +10,13 @@ Vocab-YOU-Lary Study Sesh! is an app in which users can create, read, update, an
 - User can then create, read, update, and delete different vocabulary cards.
 - User can filter the cards based on their programming language.
 - User can also search through the cards with any specific word on a particular card.
+- A timestamp of the current day's date will be added to new vocab card submissions.
 - User can logout of the app.
 
 ## Video Walkthrough of Vocab-YOU-Lary Study Sesh!
 
 ## Relevant Links
-- [Check out the deployed site](#https://dkm-vocab.netlify.app/)
+- [Check out the deployed site] (#https://dkm-vocab.netlify.app)
 - [Wireframes] (#https://www.figma.com/file/sfdkkIxe1q5Jo3v8lgrZo3/Untitled?type=design&node-id=0-1&mode=design)
 - [Figma flowchart] (#https://www.figma.com/file/UtSDgJYP1PROPmuc7ENbe9/vocab-flowchart?type=whiteboard&node-id=0-1&t=lEI3n2uOGiBAiEwT-0)
 - [ERD] (#https://dbdiagram.io/d/64dd530402bd1c4a5ee6a984)

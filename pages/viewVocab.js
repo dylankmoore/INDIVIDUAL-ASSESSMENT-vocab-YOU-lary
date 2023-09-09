@@ -10,13 +10,15 @@ const viewVocab = (item) => {
 </div>
 <div class="card-body" style="width:18rem;">
   <blockquote class="blockquote mb-0">
+  <div class="text-secondary">• ${item.language}</div><BR>
     <p>${item.description}</p>
-    <footer class="blockquote-footer">${item.language} <cite title="Source Title">${item.time}</cite></footer>
-  </blockquote>
-  <i class="btn btn-view"
-  id="update-vocab--${item.firebaseKey}">View</i>
-  <i id="delete-vocab-btn--${item.firebaseKey}"
-  class="btn btn-delete">Edit</i>
+    <div class="time-submit">time submitted:</div>
+        <cite title="time stamp!">${item.timestamp}</cite>
+  </blockquote><BR>
+  <a class="btn btn-edit"
+  id="update-vocab--${item.firebaseKey}">Edit</a>
+  <a id="delete-vocab-btn--${item.firebaseKey}"
+  class="btn btn-delete">Delete</a>
 </div>
 </div>
   `;

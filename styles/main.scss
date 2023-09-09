@@ -1,16 +1,20 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "~bootstrap/scss/bootstrap";
 
-
 body {
 
   background-color: lavenderblush;
-  color: mediumpurple;
+  color: white;
   text-align: center;
   margin-top: 100px;
   background-image: url('https://assets.awwwards.com/awards/images/2019/03/old-web-3-2.jpg');
   background-attachment: fixed;
   background-size: cover;
+
+  #splash {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+  }
 }
 
 
@@ -95,6 +99,11 @@ body {
       margin: 5px;
       }
 
+    }
+    .time-submit {
+      justify-content: center;
+      font-size: 10px;
+      color: gray;
     }
 
     .header {

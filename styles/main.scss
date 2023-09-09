@@ -27,7 +27,7 @@ body {
 }
 
 .navbar-lavender .navbar-brand {
-  font-family: "courier-new", !important;
+  font-family: "georgia", !important;
   color: lightpink;
   font-weight: 900;
   font-size: 2em;
@@ -93,7 +93,6 @@ body {
     .card {
       width: 300px;
       margin: 5px;
-      height: 430px;
       }
 
     }
@@ -107,6 +106,7 @@ body {
 
     .card-body {
       height: 50%;
+      width: 100%;
     }
 
   }

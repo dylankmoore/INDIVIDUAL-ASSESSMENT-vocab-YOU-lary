@@ -1,5 +1,6 @@
 import { createVocabCard, vocabCards, updateVocabCard } from '../api/vocabData';
 import { showVocabCards } from '../pages/vocab';
+import timeStamp from './timeStamp';
 
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
@@ -10,7 +11,7 @@ const formEvents = (user) => {
       const payload = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
-        timestamp: '',
+        timestamp: timeStamp,
         language: document.querySelector('#language').value,
         uid: user.uid
       };
@@ -31,7 +32,7 @@ const formEvents = (user) => {
       const payload = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
-        timestamp: '',
+        timestamp: timeStamp,
         language: document.querySelector('#language').value,
         uid: user.uid,
         firebaseKey,

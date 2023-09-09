@@ -6,7 +6,6 @@ const addVocabForm = (uid, obj = {}) => {
   clearDom();
   const domString = `
   <form id="${obj.firebaseKey ? `update-vocab--${obj.firebaseKey}` : 'submit-vocab'}" class="mb-4">
-  
   <div class="form-group">
     <label for="title">Vocabulary Word:</label>
     <input type="text" class="form-control" id="title" aria-describedby="vocabTitle" placeholder="Enter A Vocab Word" value="${obj.title || ''}" required>

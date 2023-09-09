@@ -23,7 +23,7 @@ const addVocabForm = (uid, obj = {}) => {
     <option value="JavaScript">JavaScript</option>
   </select>
 </div><BR>
-  <button type="submit" class="btn btn-primary" id="submit-btn">Submit Vocab Word
+  <button type="submit" class="btn btn-outline" id="submit-btn">Submit Vocab Word
   </button>
 </form>
   `;

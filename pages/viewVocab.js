@@ -13,10 +13,10 @@ const viewVocab = (item) => {
     <p>${item.description}</p>
     <footer class="blockquote-footer">${item.language} <cite title="Source Title">${item.time}</cite></footer>
   </blockquote>
-  <i class="fas fa-edit btn btn-info"
-  id="update-vocab--${item.firebaseKey}"></i>
+  <i class="btn btn-view"
+  id="update-vocab--${item.firebaseKey}">View</i>
   <i id="delete-vocab-btn--${item.firebaseKey}"
-  class="btn btn-danger fas fa-trash-alt"></i>
+  class="btn btn-delete">Edit</i>
 </div>
 </div>
   `;

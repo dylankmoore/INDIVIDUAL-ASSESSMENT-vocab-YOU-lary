@@ -22,14 +22,14 @@ const showVocabCards = (array) => {
     <div class="card-body" style="width: 18rem;">
       <blockquote class="blockquote mb-0">
         <p>${item.description}</p>
-        <footer class="blockquote-footer">${item.language} <cite title="Source Title">${item.time}</cite></footer>
+        <footer class="blockquote-footer">${item.language}</footer>
       </blockquote>
-      <i class="btn btn-success fas fa-eye" 
-      id="view-vocab-btn--${item.firebaseKey}"></i>
-      <i class="fas fa-edit btn btn-info"
-      id="update-vocab--${item.firebaseKey}"></i>
-      <i id="delete-vocab-btn--${item.firebaseKey}"
-      class="btn btn-danger fas fa-trash-alt"></i>
+      <a class="btn btn-view" 
+      id="view-vocab-btn--${item.firebaseKey}">View</a>
+      <a class="btn btn-edit"
+      id="update-vocab--${item.firebaseKey}">Edit</a>
+      <a id="delete-vocab-btn--${item.firebaseKey}"
+      class="btn btn-delete">Delete</a>
     </div>
   </div>`;
     });

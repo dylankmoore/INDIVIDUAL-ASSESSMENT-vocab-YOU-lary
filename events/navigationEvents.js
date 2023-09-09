@@ -10,6 +10,7 @@ const navigationEvents = (user) => {
   document.querySelector('#logout-button')
     .addEventListener('click', signOut);
 
+  // CLICK EVENTS
   // ALL CARDS
   document.querySelector('#all-vocab').addEventListener('click', () => {
     vocabCards(user.uid).then((array) => {

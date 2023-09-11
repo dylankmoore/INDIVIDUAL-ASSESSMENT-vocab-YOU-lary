@@ -29,7 +29,13 @@ const navigationEvents = (user) => {
 
   // HTML CARDS
   document.querySelector('#html').addEventListener('click', () => {
-    htmlCards(user.uid).then(showVocabCards);
+    htmlCards(user.uid).then((array) => {
+      if (array.length) {
+        showVocabCards(array);
+      } else {
+        emptyVocabCards();
+      }
+    });
   });
 
   // CSS CARDS

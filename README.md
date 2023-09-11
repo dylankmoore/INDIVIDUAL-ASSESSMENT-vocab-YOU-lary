@@ -21,12 +21,12 @@ Vocab-YOU-Lary Study Sesh! is an app in which users can create, read, update, an
 - [Wireframes] (#https://www.figma.com/file/sfdkkIxe1q5Jo3v8lgrZo3/Untitled?type=design&node-id=0-1&mode=design)
 - [Figma flowchart] (#https://www.figma.com/file/UtSDgJYP1PROPmuc7ENbe9/vocab-flowchart?type=whiteboard&node-id=0-1&t=lEI3n2uOGiBAiEwT-0)
 - [ERD] (#https://dbdiagram.io/d/64dd530402bd1c4a5ee6a984)
-- [Project Board](#https://github.com/users/dylankmoore/projects/2)
-
-## Code Snippet
-PLACE CODE SNIPPET HERE
+- [Project Board] (#http://www.github.com/users/dylankmoore/projects)
 
 ## Project Screenshots
+! [Screenshot 1] (https://yourimageshare.com/ib/RFwWqed7Nk)
+! [Screenshot 2] (https://yourimageshare.com/ib/oKUf8kCSjL)
+! [Screenshot 3] (https://yourimageshare.com/ib/bTrjosRglE)
 
 ## Contributors
 - [Dylan Moore](https://github.com/dylankmoore)

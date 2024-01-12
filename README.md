@@ -24,9 +24,10 @@ Vocab-YOU-Lary Study Sesh! is an app in which users can create, read, update, an
 - [Project Board](http://www.github.com/users/dylankmoore/projects)
 
 ## Project Screenshots
-![Screenshot 1](https://yourimageshare.com/ib/RFwWqed7Nk)
-![Screenshot 2](https://yourimageshare.com/ib/oKUf8kCSjL)
-![Screenshot 3](https://yourimageshare.com/ib/bTrjosRglE)
+![vocab](https://github.com/dylankmoore/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary/assets/134669892/c0654e48-9a82-4679-b869-2af854940178)
+![vocab2](https://github.com/dylankmoore/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary/assets/134669892/09e56450-e9be-4871-b65e-87a706dd2027)
+![vocab3](https://github.com/dylankmoore/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary/assets/134669892/aaa55481-8446-4863-a8f2-c633f9b98f26)
+
 
 ## Contributors
 - [Dylan Moore](https://github.com/dylankmoore)
